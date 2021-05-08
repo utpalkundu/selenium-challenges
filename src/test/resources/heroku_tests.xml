@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="suite1" parallel="tests" thread-count="10" data-provider-thread-count="10">
+    <listeners>
+        <listener class-name="com.aventstack.extentreports.testng.listener.ExtentITestListenerClassAdapter"></listener>
+    </listeners>
+    <test name="TestsForSeleniumExec">
+        <classes>
+<!--            <class name="herokuInternetApp.herokuTests.HerokuTests"/>-->
+            <class name="herokuInternetApp.herokuTests.AlertsTests"></class>
+        </classes>
+    </test>
+</suite>
